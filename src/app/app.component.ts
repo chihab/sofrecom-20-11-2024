@@ -9,6 +9,7 @@ import { stringify } from './helpers/string.helper';
 import { W04Component } from './workshops/w04/w04.component';
 import { InputsOutputsComponent } from './experiments/inputs-outputs/inputs-outputs.component';
 import { W05Component } from './workshops/w05/w05.component';
+import { DiComponent } from './experiments/di/di.component';
 
 interface User {
   firstName: string;
@@ -31,6 +32,7 @@ let user: User = {
     InputsOutputsComponent,
     W04Component,
     W05Component,
+    DiComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
