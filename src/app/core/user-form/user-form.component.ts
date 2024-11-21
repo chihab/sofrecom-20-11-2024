@@ -9,6 +9,7 @@ import { User } from '../models/user.model';
       <div class="mb-3">
         <label for="firstName" class="form-label">First Name</label>
         <input
+          [value]="'A'"
           type="text"
           class="form-control"
           id="firstName"
@@ -19,6 +20,7 @@ import { User } from '../models/user.model';
       <div class="mb-3">
         <label for="lastName" class="form-label">Last Name</label>
         <input
+          [value]=""
           type="text"
           class="form-control"
           id="lastName"
@@ -29,6 +31,7 @@ import { User } from '../models/user.model';
       <div class="mb-3">
         <label for="email" class="form-label">Email</label>
         <input
+          [value]="'A'"
           type="email"
           class="form-control"
           id="email"

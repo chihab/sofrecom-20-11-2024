@@ -11,6 +11,7 @@ import { InputsOutputsComponent } from './experiments/inputs-outputs/inputs-outp
 import { W05Component } from './workshops/w05/w05.component';
 import { DiComponent } from './experiments/di/di.component';
 import { ThemeService } from './core/services/theme.service';
+import { W06Component } from './workshops/w06/w06.component';
 
 interface User {
   firstName: string;
@@ -33,6 +34,7 @@ let user: User = {
     InputsOutputsComponent,
     W04Component,
     W05Component,
+    W06Component,
     DiComponent,
   ],
   templateUrl: './app.component.html',
