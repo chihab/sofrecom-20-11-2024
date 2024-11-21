@@ -1,12 +1,36 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { HelloComponent } from './experiments/hello/hello.component';
+import { AlertComponent } from './experiments/alert/alert.component';
+import { UsersComponent } from './core/users/users.component';
+import { AlertErrorComponent } from './ui/alert-error/alert-error.component';
+import { AlertSuccessComponent } from './ui/alert-success/alert-success.component';
+import { DataBindingComponent } from './experiments/data-binding/data-binding.component';
+import { stringify } from './helpers/string.helper';
+import { W04Component } from './workshops/w04/w04.component';
+
+interface User {
+  firstName: string;
+  lastName: string;
+  age?: number;
+}
+
+let user: User = {
+  firstName: '',
+  lastName: '',
+};
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [
+    UsersComponent,
+    AlertErrorComponent,
+    AlertSuccessComponent,
+    DataBindingComponent,
+    W04Component,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'ng-app19';
+  title = stringify('ng-app19');
 }
