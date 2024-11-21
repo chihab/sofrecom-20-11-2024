@@ -7,6 +7,7 @@ import { AlertSuccessComponent } from './ui/alert-success/alert-success.componen
 import { DataBindingComponent } from './experiments/data-binding/data-binding.component';
 import { stringify } from './helpers/string.helper';
 import { W04Component } from './workshops/w04/w04.component';
+import { InputsOutputsComponent } from './experiments/inputs-outputs/inputs-outputs.component';
 
 interface User {
   firstName: string;
@@ -26,6 +27,7 @@ let user: User = {
     AlertErrorComponent,
     AlertSuccessComponent,
     DataBindingComponent,
+    InputsOutputsComponent,
     W04Component,
   ],
   templateUrl: './app.component.html',
