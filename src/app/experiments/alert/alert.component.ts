@@ -1,6 +1,8 @@
 import { NgClass } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
+export type MessageType = 'success' | 'error' | 'warning';
+
 @Component({
   selector: 'app-alert',
   imports: [NgClass],
@@ -26,7 +28,7 @@ export class AlertComponent {
   message = 'This is an alert message';
 
   @Input()
-  type: 'success' | 'error' | 'warning' = 'success';
+  type: MessageType = 'success';
 
   @Input()
   isError = false;

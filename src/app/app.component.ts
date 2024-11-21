@@ -8,6 +8,7 @@ import { DataBindingComponent } from './experiments/data-binding/data-binding.co
 import { stringify } from './helpers/string.helper';
 import { W04Component } from './workshops/w04/w04.component';
 import { InputsOutputsComponent } from './experiments/inputs-outputs/inputs-outputs.component';
+import { W05Component } from './workshops/w05/w05.component';
 
 interface User {
   firstName: string;
@@ -29,6 +30,7 @@ let user: User = {
     DataBindingComponent,
     InputsOutputsComponent,
     W04Component,
+    W05Component,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
