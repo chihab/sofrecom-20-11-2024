@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DiComponent } from './di.component';
-import { ThemeService } from '../../services/theme.service';
+import { ThemeService } from '../../core/services/theme.service';
 
 class MockThemeService {
   getCurrentTheme() {

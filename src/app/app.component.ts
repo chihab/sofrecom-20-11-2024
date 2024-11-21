@@ -10,7 +10,7 @@ import { W04Component } from './workshops/w04/w04.component';
 import { InputsOutputsComponent } from './experiments/inputs-outputs/inputs-outputs.component';
 import { W05Component } from './workshops/w05/w05.component';
 import { DiComponent } from './experiments/di/di.component';
-import { ThemeService } from './services/theme.service';
+import { ThemeService } from './core/services/theme.service';
 
 interface User {
   firstName: string;
