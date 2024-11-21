@@ -1,10 +1,11 @@
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
+import { UserPreferenceService } from './user-preference.service';
 
-@Injectable({
-  providedIn: 'root',
-})
 export class ThemeService {
+  userPreferenceService = inject(UserPreferenceService);
   theme = 'orange';
+  constructor() {}
+
   getUserTheme() {
     // fetch()
   }

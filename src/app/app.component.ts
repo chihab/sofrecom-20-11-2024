@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { HelloComponent } from './experiments/hello/hello.component';
 import { AlertComponent } from './experiments/alert/alert.component';
 import { UsersComponent } from './core/users/users.component';
@@ -10,6 +10,7 @@ import { W04Component } from './workshops/w04/w04.component';
 import { InputsOutputsComponent } from './experiments/inputs-outputs/inputs-outputs.component';
 import { W05Component } from './workshops/w05/w05.component';
 import { DiComponent } from './experiments/di/di.component';
+import { ThemeService } from './services/theme.service';
 
 interface User {
   firstName: string;
@@ -39,4 +40,5 @@ let user: User = {
 })
 export class AppComponent {
   title = stringify('ng-app19');
+  themeService = inject(ThemeService);
 }
