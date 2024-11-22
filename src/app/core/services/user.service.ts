@@ -20,6 +20,7 @@ export class UserService {
   }
 
   getUsers() {
-    return [...this.users];
+    return structuredClone(this.users);
+    // to avoid this.userService.getUsers()[0].firstName = 'A';
   }
 }

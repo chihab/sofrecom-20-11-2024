@@ -20,6 +20,7 @@ import { User } from '../../core/models/user.model';
     <!-- appAlert.render() -->
 
     <app-input (change)="onChange($event)" />
+    <!-- appInput.change.subscribe(($event) => { onChange($even)}) -->
   `,
   styles: ``,
 })
