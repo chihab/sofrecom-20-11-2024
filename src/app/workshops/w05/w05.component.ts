@@ -11,6 +11,7 @@ import { UsersComponent } from '../../core/users/users.component';
   selector: 'app-w05',
   imports: [UserFormComponent, AlertComponent, UsersComponent],
   template: `
+    <h1>Workshop 5</h1>
     <app-user-form (edit)="addUser($event)" />
     @if(message) {
     <app-alert [message]="message" [type]="messageType" />

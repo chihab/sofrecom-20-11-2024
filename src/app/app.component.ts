@@ -14,6 +14,7 @@ import { ThemeService } from './core/services/theme.service';
 import { W06Component } from './workshops/w06/w06.component';
 import { HttpClientComponent } from './experiments/http-client/http-client.component';
 import { W08Component } from './workshops/w08/w08.component';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -29,11 +30,16 @@ import { W08Component } from './workshops/w08/w08.component';
     DiComponent,
     HttpClientComponent,
     W08Component,
+    RouterOutlet,
+    RouterLink,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
+  providers: [ThemeService],
 })
 export class AppComponent {
   title = stringify('ng-app19');
   themeService = inject(ThemeService);
+
+  workshops = ['05', '06'];
 }

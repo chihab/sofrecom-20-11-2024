@@ -12,6 +12,7 @@ import { UserService } from '../../core/services/user.service';
   selector: 'app-w06',
   imports: [UserFormComponent, AlertComponent, UsersComponent],
   template: `
+    <h1>Workshop 6</h1>
     <app-user-form (edit)="addUser($event)" />
     @if(message) {
     <app-alert [message]="message" [type]="messageType" />
