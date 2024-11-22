@@ -12,17 +12,7 @@ import { W05Component } from './workshops/w05/w05.component';
 import { DiComponent } from './experiments/di/di.component';
 import { ThemeService } from './core/services/theme.service';
 import { W06Component } from './workshops/w06/w06.component';
-
-interface User {
-  firstName: string;
-  lastName: string;
-  age?: number;
-}
-
-let user: User = {
-  firstName: '',
-  lastName: '',
-};
+import { HttpClientComponent } from './experiments/http-client/http-client.component';
 
 @Component({
   selector: 'app-root',
@@ -36,6 +26,7 @@ let user: User = {
     W05Component,
     W06Component,
     DiComponent,
+    HttpClientComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
