@@ -13,6 +13,7 @@ import { DiComponent } from './experiments/di/di.component';
 import { ThemeService } from './core/services/theme.service';
 import { W06Component } from './workshops/w06/w06.component';
 import { HttpClientComponent } from './experiments/http-client/http-client.component';
+import { W08Component } from './workshops/w08/w08.component';
 
 @Component({
   selector: 'app-root',
@@ -27,6 +28,7 @@ import { HttpClientComponent } from './experiments/http-client/http-client.compo
     W06Component,
     DiComponent,
     HttpClientComponent,
+    W08Component,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
