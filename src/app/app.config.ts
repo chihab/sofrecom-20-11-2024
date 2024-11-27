@@ -9,8 +9,8 @@ import { provideHttpClient } from '@angular/common/http';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
-    // provideRouter(routes, withComponentInputBinding()),
-    provideRouter(routes),
+    provideRouter(routes, withComponentInputBinding()),
+    // provideRouter(routes),
     provideHttpClient(),
     ThemeService,
     UserPreferenceService,
